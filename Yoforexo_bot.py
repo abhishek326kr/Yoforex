@@ -13,14 +13,11 @@ trainer.train("chatterbot.corpus.english")
 # Start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("""
-Hello and welcome to Yoforex! 🌟 
-Thank you for reaching out to us. We're excited to share how our advanced trading bots and expert signals can help you elevate your trading experience.
+Hello and welcome to Yoforex! 🌟
 
-To get started, simply explore the options below, or ask us any questions you may have.
-Our goal is to provide you with all the information you need to make informed decisions and achieve your trading goals.
-                                    
-Talk to our representative -> [CLICK HERE](https://t.me/yoforexpremium?text=Hi%20%40yoforexpremium)
-                                    
+Thank you for reaching out to us. We’re thrilled to introduce you to our cutting-edge trading bots and expert signals, designed to enhance your trading journey.
+
+Feel free to explore the options below, or ask us any questions you might have. Our mission is to empower you with the knowledge and tools needed to make confident, informed decisions and reach your trading goals.
 """, parse_mode="Markdown")
 
 # /courses command handler
@@ -29,7 +26,7 @@ async def courses_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 *YoForex VIP (Trading Course)*
 
 We Target Basic to Advance Knowledge:
-1. No Indicator’s Used
+1. No Indicators Used
 2. SMC
 3. ICT
 4. FVG
@@ -107,7 +104,7 @@ async def propFirm(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 *PropFirm Passing Services*
 *Manual Passing*
     - A dedicated trader will be assigned to you
-    - Trader will entry and exit manually
+    - Trader will enter and exit manually
     - IP Address can't be detected; we will use Premium Proxy cost $5 Each
     - Contact [@yoforexpremium](https://t.me/YoForexPremium?text=Hi%20%40YoForexPremium%2C%20I%20want%20to%20know%20more%20about%20Manual%20Passing%20in%20PropFirm%20Passing%20Services.%20Here%20is%20my%20account%20details%3A) with your account details
         
@@ -190,12 +187,11 @@ async def iblink(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     
     Once Joined Send us the Registered Email and Account ID.
     Click here to send → [@yoforexpremium](https://t.me/yoforexpremium?text=Hi%20%40yoforexpremium%2C%20I%20have%20created%20an%20account%20using%20the%20IB%20link.%0A%0AHere%20are%20my%20Details%3A%0AEmail%3A%0AAccount%20ID%3A)
-     
     
     We are sub-broker
     any problem withdrawing / depositing
-    contact us , we can solve every broker-related issues in no-time
-    *Applicable for only GTCFX & Doo Prime
+    contact us , we can solve every broker-related issue in no-time
+    *Applicable for only GTCFX & Doo Prime*
     """
     await update.message.reply_text(iblink, parse_mode="Markdown")
 
